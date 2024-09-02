@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #102c57;
@@ -37,11 +37,6 @@ h1 {
 .section p {
   margin: 0;
   line-height: 1.9;
-  font-weight:bold;
+  font-weight: bold;
   font-size: 14px;
 }
-
-
-
-
-
