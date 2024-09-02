@@ -24,7 +24,6 @@ h1 {
 .profile-img {
   border-radius: 50%;
   max-width: 150px;
-  filter: blur(2px);
 }
 .section {
   margin-bottom: 20px;
