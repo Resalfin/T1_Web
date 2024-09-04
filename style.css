@@ -4,7 +4,44 @@ body {
   padding: 0;
   background-color: #102c57;
 }
-.container {
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 22px 22px 22px;
+}
+.nav_opsi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  list-style: none;
+  margin-right: 50px;
+  marggin-top: 30px;
+  padding: 2px 30px 2px 30px;
+}
+.nav_opsi a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}
+.nav_opsi a:hover {
+  color: gold;
+  border-bottom: 3px solid gold;
+  padding-bottom: 3px;
+}
+.nav_icon {
+  color: white;
+  font-size: 1.3rem;
+  margin-left: 50px;
+  padding: 2px 22px 2px 22px;
+}
+.nav_icon span {
+  color: gold;
+}
+
+.Card_Biodata {
   background-color: #ffff;
   max-width: 600px;
   margin: 20px auto;
@@ -12,19 +49,22 @@ body {
   border-radius: 8px;
   box-shadow: 10px 10px 10px rgba(140, 140, 140, 1);
 }
-header {
+.Card_Biodata header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-h1 {
+.Card_Biodata header h1 {
   color: #000;
 }
 .profile-img {
   border-radius: 50%;
   max-width: 150px;
   filter: blur(2px);
+}
+.profile-img:hover {
+  filter: blur(0);
 }
 .section {
   margin-bottom: 20px;
@@ -39,4 +79,28 @@ h1 {
   line-height: 1.9;
   font-weight: bold;
   font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 2px;
+  }
+  .nav_opsi {
+    padding: 2px;
+    gap: 30px;
+  }
+  .nav_opsi a {
+    font-size: 1rem;
+  }
+  .nav_icon {
+    padding: 2px;
+    font-size: 1rem;
+  }
+
+  .Card_Biodata {
+    max-width: 400px;
+  }
+  .section p {
+    font-size: 14px;
+  }
 }
